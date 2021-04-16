@@ -1,0 +1,56 @@
+<html>
+<head>
+<style>
+    body {
+        background-image: url('https://www.w3schools.com/html/img_girl.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+      }
+    #customers {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      #customers td, #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+  
+      #customers tr:nth-child(even){background-color: #f2f2f2;}  
+      #customers tr:hover {background-color: #ddd;}  
+      #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4CAF50;
+        color: white;
+      }
+}
+</style>
+</head>
+<body>   
+<h1>Salesforce JWT</h1>
+<h5>Developed by Arif :)</h5>
+<br/>
+
+
+<h3 style="color:blue;"> 
+    <p>Access Token : <%= res.access_token %></p>
+    <p>Scopes : <%= res.scope %></p>
+    <p>instance url : <%= res.instance_url %></p>
+    <p>Id : <%= res.id %></p>
+    <p>Bearer : <%= res.token_type %></p>
+</h3>
+<p>No of Hits : <%= noOfhits %></p>
+<hr/>
+<h1>
+  
+  <p style="color:blue;">Note: Open SSL is used for generating certificates</p>
+  <p style="color:red;">You can the use the above obtained access token for hitting the standard REST API's for checking :)</p>
+</h1>
+<hr/>
+
+</body>
+</html>
